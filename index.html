@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perdão</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #c2185b;
+    text-align: center;
+}
+
+a {
+    color: #880e4f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+pre {
+    background-color: #fce4ec;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-size: 1rem;
+    font-family: 'Corbel', Courier, monospace;
+}
+
+.footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+}
+.heart-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.heart-container span {
+    position: absolute;
+    top: -10%;
+    font-size: 2rem;
+    animation: fall 10s linear infinite;
+    opacity: 0.8;
+}
+
+/* Distribuir os corações aleatoriamente */
+.heart-container span:nth-child(1) { left: 10%; animation-delay: 0s; }
+.heart-container span:nth-child(2) { left: 20%; animation-delay: 2s; }
+.heart-container span:nth-child(3) { left: 30%; animation-delay: 4s; }
+.heart-container span:nth-child(4) { left: 40%; animation-delay: 1s; }
+.heart-container span:nth-child(5) { left: 50%; animation-delay: 3s; }
+.heart-container span:nth-child(6) { left: 60%; animation-delay: 5s; }
+.heart-container span:nth-child(7) { left: 70%; animation-delay: 2.5s; }
+.heart-container span:nth-child(8) { left: 80%; animation-delay: 4.5s; }
+.heart-container span:nth-child(9) { left: 90%; animation-delay: 6s; }
+.heart-container span:nth-child(10) { left: 25%; animation-delay: 1.5s; }
+.heart-container span:nth-child(11) { left: 35%; animation-delay: 3.5s; }
+.heart-container span:nth-child(12) { left: 75%; animation-delay: 5.5s; }
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+</style>
+<body>
+    <section>
+    <h1>Oi..que saudade de você..</h1>
+    <p>Vim aqui te dizer algumas coisas pra você..<br>
+    <pre>
+    Eu não sou perfeito, eu cometi erros, eu errei com você...
+    Mas ainda sim, eu te amo e quero que você saiba disso..
+    Eu sei que eu não sou a pessoa mais fácil de lidar, e que eu cometi erros que te machucaram..
+    Mas, queria te dizer que eu estou aqui, de coração aberto, esperando por você..
+    E que, se quiser tentar de novo, vou fazer de tudo pra te fazer feliz..
+    Eu quero você de volta, e quero que você saiba que eu estou disposto a mudar..
+    Ainda sim te amo, e quero que você saiba disso..
+    Eu não sou perfeito, mas estou disposto a tentar..
+    Desculpa por tudo que eu fiz, e espero que você possa me perdoar..
+    Quero você de volta....
+    </pre>
+    </section>
+    <section>
+        <h2>Deixo aqui uma música que me faz pensar bastante em você..</h2>
+        <p><a href = "https://open.spotify.com/intl-pt/track/2cX2coZS1PYBfPs8wgbdWE?si=cd7a69b3c1684753">Clique aqui</a></p>
+    </section>
+    <section class="footer">
+        <p>Com amor... <a href="https://www.instagram.com/math.jpth/">Matheus</a></p> 
+    </section>
+    <div class="heart-container">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💘</span>
+        <span>💗</span>
+        <span>💓</span>
+        <span>💝</span>
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💘</span>
+        <span>💗</span>
+      </div>
+</body>
+</html>
